@@ -15,7 +15,7 @@ CSS saves a Lot of Work
 
 A CSS rule groups a set of CSS properties together and applies all properties to the HTML elements matched by the CSS rule.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2016.36.36.png" alt="截屏2024-02-13 16.36.36" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2016.36.36.png" alt="截屏2024-02-13 16.36.36" style="zoom:50%;" />
 
 ```css
 <div style="border: 1px solid black; font-size: 18px;">
@@ -44,7 +44,7 @@ CSS selectors are used to **"find" (or select) the HTML elements** you want to s
 
 Every HTML element can have **"id" and "class"** attributes.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2016.49.56.png" alt="截屏2024-02-13 16.49.56" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2016.49.56.png" alt="截屏2024-02-13 16.49.56" style="zoom:50%;" />
 
 #### Relationship and Key Difference between _id_ and _class_
 
@@ -58,7 +58,7 @@ explains the relationship between the selectors.
 
 A CSS selector can <u>contain more than one simple selector.</u>
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.08.22.png" alt="截屏2024-02-13 17.08.22" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.08.22.png" alt="截屏2024-02-13 17.08.22" style="zoom:50%;" />
 
 #### 邻接兄弟选择器（`+`）的作用
 
@@ -74,9 +74,9 @@ Pseudo class designates **a special state** of an element.
 
 **syntax**:
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-02-13 17.20.11.png" alt="截屏2024-02-13 17.20.11" style="zoom:40%;" /><img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.56.55.png" alt="截屏2024-02-13 17.56.55" style="zoom:50%;" />
+<img src="../notes_image/截屏2024-02-13 17.20.11.png" alt="截屏2024-02-13 17.20.11" style="zoom:40%;" /><img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.56.55.png" alt="截屏2024-02-13 17.56.55" style="zoom:50%;" />
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.20.46.png" alt="截屏2024-02-13 17.20.46" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.20.46.png" alt="截屏2024-02-13 17.20.46" style="zoom:50%;" />
 
 #### 4. CSS Pseudo-elements selectors
 
@@ -85,19 +85,19 @@ used to style **specified parts** of an element.
 - Style the first letter, or line, of an element 
 - Insert content before, or after, the content of an element
 
-**syntax**:<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.59.25.png" alt="截屏2024-02-13 17.59.25" style="zoom:50%;" />
+**syntax**:<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2017.59.25.png" alt="截屏2024-02-13 17.59.25" style="zoom:50%;" />
 
-Example: <img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.00.12.png" alt="截屏2024-02-13 18.00.12" style="zoom:50%;" />
+Example: <img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.00.12.png" alt="截屏2024-02-13 18.00.12" style="zoom:50%;" />
 
 
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.01.19.png" alt="截屏2024-02-13 18.01.19" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.01.19.png" alt="截屏2024-02-13 18.01.19" style="zoom:50%;" />
 
 #### 5. CSS attribute selectors
 
 Used to style HTML elements that **have specific attributes or attribute values**
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.26.44.png" alt="截屏2024-02-13 18.26.44" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.26.44.png" alt="截屏2024-02-13 18.26.44" style="zoom:50%;" />
 
 ## How To Add CSS in HTML document
 
@@ -123,7 +123,7 @@ can be used if <u>one single HTML page has a unique style</u>
 
 inside the **<style> element**, inside the **head section**.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.32.24.png" alt="截屏2024-02-13 18.32.24" style="zoom:40%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.32.24.png" alt="截屏2024-02-13 18.32.24" style="zoom:40%;" />
 
 ### 3. External CSS
 
@@ -131,7 +131,7 @@ The style sheet is **defined in a sepaarfte file**.
 
 Each HTML page must include a **reference** to the external style sheet file inside the **<link> element**, inside the **head section**.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.35.32.png" alt="截屏2024-02-13 18.35.32" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-13%2018.35.32.png" alt="截屏2024-02-13 18.35.32" style="zoom:50%;" />
 
 ## Resolution of conflicts
 
@@ -266,7 +266,7 @@ It defines how each HTML element is rendered on the screen. According to the box
 
   Height, Width – relates to the content area only!
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-14%2010.25.03.png" alt="截屏2024-02-14 10.25.03" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-14%2010.25.03.png" alt="截屏2024-02-14 10.25.03" style="zoom:50%;" />
 
 ##### Values of height, width, padding, border and margin
 
@@ -307,7 +307,7 @@ The `display`, `position`, and `float` properties are pivotal for changing the n
 
   `visibility: hidden` merely makes the element invisible, but it still **occupies space in the layout** as if it were visible.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2016.40.33.png" alt="截屏2024-02-16 16.40.33" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2016.40.33.png" alt="截屏2024-02-16 16.40.33" style="zoom:50%;" />
 
 
 
@@ -327,7 +327,7 @@ Set how an element is **positioned** in a document.
 4. `Fixed`: The element is **removed** from the normal document flow and positioned **relative to the viewport**, which means it stays in the same place even if the page is scrolled.
 5. `Sticky`: **A hybrid of relative and fixed positioning**. The element is treated as `relative` until it crosses a specified threshold within the viewport, at which point it becomes `fixed`.
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2016.46.13.png" alt="截屏2024-02-16 16.46.13" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2016.46.13.png" alt="截屏2024-02-16 16.46.13" style="zoom:50%;" />
 
 
 
@@ -339,7 +339,7 @@ To use Flexbox, set `display: flex` on the container element.
 
 The flex layout is based on “flex-flow directions”
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2018.07.30.png" alt="截屏2024-02-16 18.07.30" style="zoom:50%;" />
+![](../../%E6%88%AA%E5%B1%8F2024-03-17%2022.09.07.png)
 
 Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
@@ -353,7 +353,7 @@ Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 ```
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2018.11.21.png" alt="截屏2024-02-16 18.11.21" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2018.11.21.png" alt="截屏2024-02-16 18.11.21" style="zoom:50%;" />
 
 ##### 2. Flex-wrap
 
@@ -379,7 +379,7 @@ Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 ```
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2018.14.56.png" alt="截屏2024-02-16 18.14.56" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2018.14.56.png" alt="截屏2024-02-16 18.14.56" style="zoom:50%;" />
 
 ##### 4. Align-items
 
@@ -389,7 +389,7 @@ Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 }
 ```
 
-<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2020.31.54.png" alt="截屏2024-02-16 20.31.54" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-16%2020.31.54.png" alt="截屏2024-02-16 20.31.54" style="zoom:50%;" />
 
 
 

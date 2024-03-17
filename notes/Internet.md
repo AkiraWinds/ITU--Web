@@ -12,7 +12,7 @@ To ensure that packets are sent and received correctly, the internet uses a vari
 
 IP, TCP, DNS, HTTP, SSL/TLS
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-03-12 22.44.22.png" alt="截屏2024-03-12 22.44.22" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-12%2022.44.22.png" alt="截屏2024-03-12 22.44.22" style="zoom:50%;" />
 
 ## 2. Basic concepts
 
@@ -46,7 +46,7 @@ IP is responsible for routing packets of data to their correct destination, whil
 
 用点分隔并**从右向左读取**：
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-03-13 08.58.14.png" alt="截屏2024-03-13 08.58.14" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-13%2008.58.14.png" alt="截屏2024-03-13 08.58.14" style="zoom:50%;" />
 
 [TLD](https://developer.mozilla.org/en-US/docs/Glossary/TLD)（顶级域名）。
 
@@ -64,7 +64,7 @@ TLD 告诉用户域名背后服务的一般用途。最通用的 TLD ( `.com`、
 
 # 二）REST 
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-03-14 08.13.15.png" alt="截屏2024-03-14 08.13.15" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-14%2008.13.15.png" alt="截屏2024-03-14 08.13.15" style="zoom:50%;" />
 
 **REST, or REpresentational State Transfer is an architecture style to develop web services, which uses the HTTP protocol as a communication interface in order to transfer data through HTTP methods.**
 
@@ -115,7 +115,7 @@ A request generally consists of:
 
 
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2012.37.21-0675585.png" alt="截屏2024-03-17 12.37.21" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2012.37.21-0675585.png" alt="截屏2024-03-17 12.37.21" style="zoom:50%;" />
 
 ## Structure of request and response
 
@@ -130,11 +130,11 @@ A request generally consists of:
 
 #### a. HTTP method: 
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-03-13 08.52.32.png" alt="截屏2024-03-13 08.52.32" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-13%2008.52.32.png" alt="截屏2024-03-13 08.52.32" style="zoom:50%;" />
 
 #### b. URLs
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2013.17.14.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2013.17.14.png" style="zoom:50%;" />
 
 #### c. media types/ MIME types (in header)
 
@@ -148,7 +148,7 @@ Accept header for requests, **Content-Type** header for body
 
  • textual data: **text/plain**
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2013.22.23.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2013.22.23.png" style="zoom:50%;" />
 
 
 
@@ -156,7 +156,7 @@ Accept header for requests, **Content-Type** header for body
 
 When a client request is made via a RESTful API, it transfers a representation of the state of the resource to the requester or endpoint. This information, or representation, is delivered in one of several formats via HTTP: JSON (Javascript Object Notation)  is the most generally popular file format to use
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2015.55.47.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2015.55.47.png" style="zoom:50%;" />
 
 ##### 1. JSON values
 
@@ -208,7 +208,7 @@ var myJSON = JSON.stringify(myObj);
 
 ### 1.2 How to design RESTTul services?
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2016.37.05.png" style="zoom:40%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2016.37.05.png" style="zoom:40%;" />
 
 More details about Web API design: https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
 
@@ -216,23 +216,23 @@ More details about Web API design: https://docs.microsoft.com/en-us/azure/archit
 
 ##### Resources
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2016.40.12.png" style="zoom:40%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2016.40.12.png" style="zoom:40%;" />
 
 ##### URI templates
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2016.41.40.png" style="zoom:40%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2016.41.40.png" style="zoom:40%;" />
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2016.43.04.png" style="zoom:40%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2016.43.04.png" style="zoom:40%;" />
 
 #### 1.2.2 Define operations in terms of HTTP methods
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2016.44.14.png" style="zoom:40%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2016.44.14.png" style="zoom:40%;" />
 
 Example:
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2017.47.14.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2017.47.14.png" style="zoom:50%;" />
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2017.47.21.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2017.47.21.png" style="zoom:50%;" />
 
 ## Open API specification
 
@@ -275,7 +275,7 @@ API规范可以用YAML或JSON格式编写，易于学习且对人和机器都易
 
 - 例子：如何发出一个GET请求并处理返回的JSON数据。
 
-  <img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2017.54.33.png" style="zoom:50%;" />
+  <img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2017.54.33.png" style="zoom:50%;" />
 
 - 有关Fetch API的更多信息：https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
@@ -283,7 +283,7 @@ API规范可以用YAML或JSON格式编写，易于学习且对人和机器都易
 
   - `fetch`函数接收一个指定端点（URL）的资源字符串，以及一个可选的描述HTTP请求的`init`对象。
 
-    <img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2017.56.50.png" style="zoom:40%;" />
+    <img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2017.56.50.png" style="zoom:40%;" />
 
   - ```markdown
     init对象的主要属性包括：
@@ -313,7 +313,7 @@ An HTTP response is what web clients (often browsers) receive from an Internet s
 | 4xx        | Client Error  | The request contains bad syntax or cannot be fulfilled.      |
 | 5xx        | Server Error  | The server failed to fulfill an apparently valid request.    |
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-03-14 08.20.22.png" alt="截屏2024-03-14 08.20.22" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-14%2008.20.22.png" alt="截屏2024-03-14 08.20.22" style="zoom:50%;" />
 
 
 
@@ -326,12 +326,12 @@ An HTTP response is what web clients (often browsers) receive from an Internet s
 
 总之，RESTful API定义了客户端和服务器之间通信的规则和结构，HTTP是这种通信的协议，JSON是数据交换的格式，而Fetch API是在客户端执行HTTP请求的一种方法。
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.02.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.02.png" style="zoom:50%;" />
 
 
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.09.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.09.png" style="zoom:50%;" />
 
-<img src="/Users/akira/Library/Application%20Support/typora-user-images/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.15.png" style="zoom:50%;" />
+<img src="/Users/akira/Desktop/ITU--Web/notes_image/%E6%88%AA%E5%B1%8F2024-03-17%2018.52.15.png" style="zoom:50%;" />
 
 https://www.codecademy.com/article/what-is-rest

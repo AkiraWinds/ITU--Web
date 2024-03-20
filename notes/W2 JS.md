@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 # W2
 
 English: ***The Elements of Style***
@@ -29,6 +33,69 @@ JavaScript：
 JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
 DOM API 代表文档对象模型应用程序编程接口。它是 Web 文档的编程接口，允许程序动态访问和更新文档的内容、结构和样式。React, Angular, and Vue 是JavaScript的库和框架。这些框架和库提供了抽象、有效的方法来操作 DOM 并构建动态、响应式 Web 应用程序。它们处理直接 DOM 操作的许多复杂性，并提供创建 Web 应用程序的结构化方法。
+
+
+
+# JavaScript Location
+
+## The <script> Tag
+
+In HTML, JavaScript code is inserted between `<script>` and `</script>` tags.
+
+## a. Internal JS
+
+Scripts can be placed in the `<body>`, or in the `<head>` section of an HTML page, or in both.
+
+```html
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+```
+
+## b. Extrnal JS
+
+JavaScript files have the file extension **.js**.
+
+Put the name of the script file in the `src` (source) attribute of a `<script>` tag
+
+at the end of <body> part
+
+```html
+<script src="myScript.js"></script>
+```
+
+#### Advantages:
+
+Placing scripts in external files has some advantages:
+
+- It separates HTML and code
+- It makes HTML and JavaScript easier to read and maintain
+- Cached JavaScript files can speed up page loads
+
+###  🌟 External References
+
+An external script can be referenced in 3 different ways:
+
+- With a full URL (a full web address)
+
+  ```html
+  <script src="https://www.w3schools.com/js/myScript.js"></script>
+  ```
+
+- With a file path (like /js/)
+
+  ```html
+  <script src="/js/myScript.js"></script>
+  ```
+
+- Without any path
+
+  ```html
+  <script src="myScript.js"></script>
+  ```
+
+
+
 
 # 1. Comments
 
@@ -134,7 +201,10 @@ It can NOT:
 But it CAN:
 
 - Change the elements of constant array
+
 - Change the properties of constant object
+
+  当使用 `const` 声明数组或对象时，你不能改变整个数组或对象的引用，但你可以改变数组中的项或对象的属性，因为 `const` 确保的是变量指向的引用不变，而不是它指向的值。
 
 ```javascript
 //array:
@@ -161,22 +231,6 @@ car.owner = "Johnson";
 //can NOT reassign the object
 car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
 ```
-
-## Logical Operators
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -249,10 +303,6 @@ car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
 | >=       | greater than or equal to          |
 | <=       | less than or equal to             |
 | ?        | ternary operator                  |
-
-
-
-
 
 
 
@@ -367,20 +417,12 @@ An empty string has both a legal value and a type.
 let car = "";    // The value is "", the typeof is "string"
 ```
 
-
-
-
-
 use the JavaScript typeof operator to find the type of a JavaScript variable.
 
 ```javascript
 typeof "John"             // Returns "string"
 
 ```
-
-
-
-
 
 
 
@@ -398,103 +440,20 @@ typeof "John"             // Returns "string"
 | return   | Exits a function                                             |
 | try      | Implements error handling to a block of statements           |
 
-# JavaScript Where To
 
-## The <script> Tag
-
-In HTML, JavaScript code is inserted between `<script>` and `</script>` tags.
-
-## a. Internal JS
-
-Scripts can be placed in the `<body>`, or in the `<head>` section of an HTML page, or in both.
-
-```html
-<script>
-document.getElementById("demo").innerHTML = "My First JavaScript";
-</script>
-```
-
-## b. Extrnal JS
-
-JavaScript files have the file extension **.js**.
-
-Put the name of the script file in the `src` (source) attribute of a `<script>` tag
-
-at the end of <body> part
-
-```html
-<script src="myScript.js"></script>
-```
-
-#### Advantages:
-
-Placing scripts in external files has some advantages:
-
-- It separates HTML and code
-- It makes HTML and JavaScript easier to read and maintain
-- Cached JavaScript files can speed up page loads
-
-###  🌟 External References
-
-An external script can be referenced in 3 different ways:
-
-- With a full URL (a full web address)
-
-  ```html
-  <script src="https://www.w3schools.com/js/myScript.js"></script>
-  ```
-
-- With a file path (like /js/)
-
-  ```html
-  <script src="/js/myScript.js"></script>
-  ```
-
-- Without any path
-
-  ```html
-  <script src="myScript.js"></script>
-  ```
-
-  
 
 # Output: Display Possibilities
 
 JavaScript can "display" data in different ways:
 
 - Writing into an HTML element, using `innerHTML`.
-
 - Writing into the HTML output using `document.write()`.
-
 - Writing into an alert box, using `window.alert()`.
-
 - Writing into the browser console, using `console.log()`.
 
-- | 方法               | 联系                                  | 区别                                                         | 何时使用                                                     |
-  | ------------------ | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | `innerHTML`        | 所有方法都是在不同的地方显示数据。    | 通过改变HTML元素的`innerHTML`属性来显示数据，通常用于动态更新网页的一部分。 | 当需要将数据插入到页面的特定元素中时。适用于**单页应用程序**，或需要**不刷新页面即可更新页面内容**的情况。 |
-  | `document.write()` | 与`innerHTML`相似，也是直接写入HTML。 | `document.write()`用于直接向HTML输出流写内容，如果在文档加载完成后执行，会**重写整个页面**。 | 主要用于测试或者在页面加载过程中输出HTML。**不推荐在生产环境中使用**，因为它会覆盖页面内容。 |
-  | `window.alert()`   | 与其他方法不同，它不修改HTML。        | `window.alert()`会**弹出一个警告框显示数据**，中断用户操作。 | 用于需要用户立即注意的情况，如表单验证反馈或提示信息。不适用于常规的信息显示，因为它会打断用户的操作流程。 |
-  | `console.log()`    | 用于调试目的，不会更改用户界面。      | `console.log()`将信息输出到**浏览器的控制台**，主要用于调试目的。 | **for debugging purposes**主要用于开发过程中调试，帮助开发者了解和检查代码执行过程中的状态或变量值。不用于生产环境中向用户展示数据。 |
-
-| 方法                                | 解释                                                        | 应用示例                                                     |
-| ----------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| `document.getElementById()`         | 选择具有指定 ID 的元素。                                    | `var elem = document.getElementById('myId'); elem.style.color = 'red';` |
-| `document.getElementsByClassName()` | 选择具有指定类名的所有元素。                                | `var items = document.getElementsByClassName('myClass'); for (var i = 0; i < items.length; i++) { items[i].style.backgroundColor = 'yellow'; }` |
-| `document.getElementsByTagName()`   | 选择具有指定标签名的所有元素。                              | `var paragraphs = document.getElementsByTagName('p'); for (var i = 0; i < paragraphs.length; i++) { paragraphs[i].style.fontSize = '18px'; }` |
-| `document.querySelectorAll()`       | 返回一个 NodeList，包含文档中所有与指定选择器组匹配的元素。 | `var items = document.querySelectorAll('.container .item'); items.forEach(function(item) { item.style.border = '1px solid blue'; });` |
-| `addEventListener()`                | 向指定元素添加事件监听器。                                  | `var btn = document.querySelector('button'); btn.addEventListener('click', function() { alert('Button clicked!'); });` |
-| `removeEventListener()`             | 从指定元素移除事件监听器。                                  | `function handleClick() { alert('Button clicked!'); } var btn = document.querySelector('button'); btn.removeEventListener('click', handleClick);` |
-| `setAttribute()`                    | 设置元素的属性值。                                          | `var link = document.querySelector('a'); link.setAttribute('href', 'https://www.example.com');` |
-| `getAttribute()`                    | 获取元素的属性值。                                          | `var link = document.querySelector('a'); var hrefValue = link.getAttribute('href'); console.log(hrefValue);` |
-| `createElement()`                   | 创建一个新的元素节点。                                      | `var newDiv = document.createElement('div'); newDiv.textContent = 'Hello, world!'; document.body.appendChild(newDiv);` |
-| `appendChild()`                     | 将一个节点添加到指定父节点的子节点列表的末尾。              | `var newParagraph = document.createElement('p'); newParagraph.textContent = 'This is a new paragraph.'; document.body.appendChild(newParagraph);` |
-
-
-
-
-
 #### 1. Using innerHTML
+
+通常用于动态更新网页的一部分， 当需要将数据插入到页面的特定元素中时。适用于**单页应用程序**，或需要**不刷新页面即可更新页面内容**的情况。
 
 a. Access an HTML element:  `document.getElementById(id)` 
 
@@ -527,6 +486,10 @@ My First Paragraph.
 
 #### 2. Using document.write()
 
+用于直接向HTML输出流写内容，如果在文档加载完成后执行，会**重写整个页面**。
+
+主要用于测试或者在页面加载过程中输出HTML。**不推荐在生产环境中使用**，因为它会覆盖页面内容。
+
 For **testing purposes**, it is convenient to use `document.write()`:
 
 ```html
@@ -547,6 +510,10 @@ document.write(5 + 6);
 
 #### 3. window.alert()
 
+会**弹出一个警告框显示数据**，中断用户操作。
+
+用于需要用户立即注意的情况，如表单验证反馈或提示信息。不适用于常规的信息显示，因为它会打断用户的操作流程。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -565,6 +532,10 @@ window.alert(5 + 6);
 
 #### 4. console.log()
 
+将信息输出到**浏览器的控制台**，主要用于调试目的。
+
+**for debugging purposes**主要用于开发过程中调试，帮助开发者了解和检查代码执行过程中的状态或变量值。不用于生产环境中向用户展示数据。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -580,9 +551,26 @@ console.log(5 + 6);
 
 
 
+### Functions
+
+| 方法                                | 解释                                                        | 应用示例                                                     |
+| ----------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------ |
+| `document.getElementById()`         | 选择具有指定 ID 的元素。                                    | `var elem = document.getElementById('myId'); elem.style.color = 'red';` |
+| `document.getElementsByClassName()` | 选择具有指定类名的所有元素。                                | `var items = document.getElementsByClassName('myClass'); for (var i = 0; i < items.length; i++) { items[i].style.backgroundColor = 'yellow'; }` |
+| `document.getElementsByTagName()`   | 选择具有指定标签名的所有元素。                              | `var paragraphs = document.getElementsByTagName('p'); for (var i = 0; i < paragraphs.length; i++) { paragraphs[i].style.fontSize = '18px'; }` |
+| `document.querySelectorAll()`       | 返回一个 NodeList，包含文档中所有与指定选择器组匹配的元素。 | `var items = document.querySelectorAll('.container .item'); items.forEach(function(item) { item.style.border = '1px solid blue'; });` |
+| `addEventListener()`                | 向指定元素添加事件监听器。                                  | `var btn = document.querySelector('button'); btn.addEventListener('click', function() { alert('Button clicked!'); });` |
+| `removeEventListener()`             | 从指定元素移除事件监听器。                                  | `function handleClick() { alert('Button clicked!'); } var btn = document.querySelector('button'); btn.removeEventListener('click', handleClick);` |
+| `setAttribute()`                    | 设置元素的属性值。                                          | `var link = document.querySelector('a'); link.setAttribute('href', 'https://www.example.com');` |
+| `getAttribute()`                    | 获取元素的属性值。                                          | `var link = document.querySelector('a'); var hrefValue = link.getAttribute('href'); console.log(hrefValue);` |
+| `createElement()`                   | 创建一个新的元素节点。                                      | `var newDiv = document.createElement('div'); newDiv.textContent = 'Hello, world!'; document.body.appendChild(newDiv);` |
+| `appendChild()`                     | 将一个节点添加到指定父节点的子节点列表的末尾。              | `var newParagraph = document.createElement('p'); newParagraph.textContent = 'This is a new paragraph.'; document.body.appendChild(newParagraph);` |
+
+
+
 # 条件语句
 
-#### if .. else..
+####  1) if .. else..
 
 ```javascript
 if (condition) {
@@ -633,23 +621,9 @@ function setWeather() {
 }
 ```
 
-<img src="/Users/akira/Library/Application Support/typora-user-images/截屏2024-02-26 18.18.58.png" alt="截屏2024-02-26 18.18.58" style="zoom:50%;" />
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-02-26%2018.18.58-0913987.png" alt="截屏2024-02-26 18.18.58" />
 
-### [逻辑运算符：与、或、非]
-
-`&&`--- and 
-
-`||`--- or
-
-`!`--- not 
-
-```javascript
-if (x === 5 || x === 7 || x === 10 || x === 20) {
-  // 执行代码
-}
-```
-
-#### switch 
+#### 2) switch 
 
 以单个表达式/值作为输入，然后查看多个选项，直到找到与该值相匹配的选项
 
@@ -703,7 +677,29 @@ function setWeather() {
 }
 ```
 
-# 循环
+#### Choice:
+
+Use the `if...else` statement when you have **a single condition or a few conditions** that lead to **an action**. It's straightforward and good for simple, binary decisions. 
+
+Use the `switch` statement is preferable when you have **multiple possible values for a variable** and you want to **perform different actions for each distinct value**. It's generally more organized and easier to read when dealing with multiple conditions that all relate to a single variable.
+
+
+
+### [逻辑运算符：与、或、非]
+
+`&&`--- and 
+
+`||`--- or
+
+`!`--- not 
+
+```javascript
+if (x === 5 || x === 7 || x === 10 || x === 20) {
+  // 执行代码
+}
+```
+
+# 循环Loop 
 
 伪代码
 
@@ -719,7 +715,7 @@ loop(food = 0; foodNeeded = 10) {
 }
 ```
 
-##### for loop
+### for loop
 
 ```javascript
 for (initializer; exit-condition; final-expression) {
@@ -727,10 +723,9 @@ for (initializer; exit-condition; final-expression) {
 }
 ```
 
-1. 在括号内，我们有三个项目，以分号分隔：
-   1. 一个**初始化器** - 这通常是一个设置为一个数字的变量，它被递增来计算循环运行的次数。它也有时被称为**计数变量**。
-   2. 一个**退出条件** - 如前面提到的，这个定义循环何时停止循环。这通常是一个表现为比较运算符的表达式，用于查看退出条件是否已满足的测试。
-   3. 一个**最终条件** - 这总是被判断（或运行），每个循环已经通过一个完整的迭代消失时间。它通常用于增加（或在某些情况下递减）计数器变量，使其更接近退出条件值。
+1. **initializer** - 一个设置为一个数字的变量，它被递增来计算循环运行的次数。它也有时被称为**计数变量**。executed (one time) before the execution of the code block.
+2. **exit-condition** - 定义循环何时停止循环。这通常是一个表现为比较运算符的表达式。defines the condition for executing the code block.
+3. **final-expression** - 这总是被判断（或运行），每个循环已经通过一个完整的迭代消失时间。它通常用于增加（或在某些情况下递减）计数器变量，使其更接近退出条件值。executed (every time) after the code block has been executed.
 
 ```javascript
 var cats = ["Bill", "Jeff", "Pete", "Biggles", "Jasmin"];
@@ -750,17 +745,164 @@ para.textContent = info;
 
 
 
+## Functions
+
+```javascript
+function multiply(num1, num2) {
+  let prod = num1 * num2;
+  return prod
+}
+```
 
 
 
 
 
+## Ojects, properties and methods
+
+JS objects are containers for named values called **properties and methods**.
+
+```javascript
+var person = {
+  firstName : 'Kim',                    //value
+  laseNAme : 'Larsen',
+  id : 5397,
+  fullName : function {                 //method
+  return firstName + ' ' + lastName;
+}
+}
+```
+
+#### Calling object properties
+
+```javascript
+//1
+person.lastName
+//2
+person['lastName']
+//3
+let prop = 'lastName'
+person[prop]
+```
+
+#### Calling object methods -- 比properties 多了()
+
+```javascript
+//1
+person.fullName()
+//2
+person['fullName']()
+//3
+let prop = 'fullName'
+person[prop]()
+```
 
 
 
+## Browser global objects
+
+全局对象提供了在任何地方都可以使用的变量和函数。
+
+在浏览器中，这个全局对象被命名为 `window`。图片中介绍了浏览器对象模型（BOM）和文档对象模型（DOM）。
+
+与此相反，DOM 是标准化的，它是文档的根，涉及页面内容的结构和内容。图片还展示了 `window` 对象如何作为 BOM、DOM 以及 JavaScript（包括对象、数组、函数等）的入口点。
+
+- BOM与DOM都是JavaScript中用来与浏览器互动的接口。
+
+- BOMBOM提供了与浏览器窗口交互的接口，关注的是浏览器窗口及其相关的功能，如 `navigator`、`screen`、`location`、`frames` 和 `history` 等对象等。
+
+- DOM提供了与页面内容交互的接口，专注于文档本身的内容和结构，允许开发者创建、移动、修改和删除文档中的节点。
+
+- BOM的操作通常是不标准化的，这意味着不同浏览器的BOM可能会有所不同。而DOM是由W3C组织标准化的，因此它在各种浏览器中的行为应该是一致的。
+
+- 在现代Web开发实践中，通常会利用库或框架来抽象这些操作，例如jQuery、React或Vue.js，它们提供了更简洁和跨浏览器兼容的接口来处理BOM和DOM的相关任务。
+
+  
 
 
 
+<img src="../notes_image/%E6%88%AA%E5%B1%8F2024-03-19%2021.13.01-0913987.png" style="zoom:50%;" />
+
+
+
+### DOM - Finding HTML Elements
+
+| Function(parameters)                    | 解释                     | 举例                                                         |
+| --------------------------------------- | ------------------------ | ------------------------------------------------------------ |
+| `document.getElementById(id)`           | 通过元素的id找到一个元素 | `var myDiv = document.getElementById("myDiv");`              |
+| `document.getElementsByTagName(name)`   | 通过标签名找到元素集合   | `var paragraphs = document.getElementsByTagName("p");`       |
+| `document.getElementsByClassName(name)` | 通过类名找到元素集合     | `var blueTexts = document.getElementsByClassName("blue-text");` |
+
+### DOM - Changing HTML Elements
+
+前三个是property，最后一个是method
+
+| Function(parameters)                     | 解释               | 举例                                            |
+| ---------------------------------------- | ------------------ | ----------------------------------------------- |
+| `element.innerHTML = new html content`   | 改变元素的内部HTML | `myDiv.innerHTML = "<span>New content</span>";` |
+| `element.attribute = new value`          | 改变元素的属性值   | `imgElement.src = "image.jpg";`                 |
+| `element.style.property = new style`     | 改变元素的样式     | `myDiv.style.color = "blue";`                   |
+| `element.setAttribute(attribute, value)` | 改变元素的属性值   | `myButton.setAttribute("disabled", true);`      |
+
+### DOM - Adding and Deleting Elements
+
+| Function(parameters)              | 解释                   | 举例                                                         |
+| --------------------------------- | ---------------------- | ------------------------------------------------------------ |
+| `document.createElement(element)` | 创建一个HTML元素       | `var newDiv = document.createElement("div");`                |
+| `document.removeChild(element)`   | 移除一个HTML元素       | `var parentDiv = document.getElementById("parentDiv"); parentDiv.removeChild(childDiv);` |
+| `document.appendChild(element)`   | 添加一个HTML元素       | `parentDiv.appendChild(newDiv);`                             |
+| `document.replaceChild(new, old)` | 替换一个HTML元素       | `parentDiv.replaceChild(newDiv, oldDiv);`                    |
+| `document.write(text)`            | 在HTML输出流中写入文本 | `document.write("Hello, world!");`                           |
+
+### HTML Form
+
+<img src="../notes_image/截屏2024-03-20 11.51.22-0932056.png" style="zoom:50%;" />
+
+| 元素         | 解释                                                 | 举例                                                         |
+| ------------ | ---------------------------------------------------- | ------------------------------------------------------------ |
+| `<input>`    | 可以根据其类型属性以不同方式显示的输入框             | `<input type="text" id="name">`                              |
+| `<label>`    | 为多个表单元素定义标签                               | `<label for="name">Name:</label>`                            |
+| `<select>`   | 定义下拉列表                                         | `<select><option value="option1">Option 1</option></select>` |
+| `<option>`   | 定义下拉列表中可以选择的选项                         | `<option value="option1">Option 1</option>`                  |
+| `<textarea>` | 定义多行文本输入域（文本区域）                       | `<textarea rows="4" cols="50"></textarea>`                   |
+| `<button>`   | 定义可点击的按钮                                     | `<button type="submit">Submit</button>`                      |
+| `<optgroup>` | 用于将`<option>`元素组合到相关组中，通常用于下拉列表 | `<optgroup label="Group 1"><option>Option 1.1</option></optgroup>` |
+
+More info at https://www.w3schools.com/html/html_form_elements.asp
+
+#### HTML input types
+
+| 元素                      | 解释                                       | 举例                                                         |
+| ------------------------- | ------------------------------------------ | ------------------------------------------------------------ |
+| `<input type="text">`     | 定义单行文本输入框                         | `<input type="text" name="username">`                        |
+| `<input type="number">`   | 定义数字输入框                             | `<input type="number" name="quantity" min="1" max="5">`      |
+| `<input type="password">` | 定义密码字段                               | `<input type="password" name="password">`                    |
+| `<input type="submit">`   | 定义提交表单数据到表单处理器的按钮         | `<input type="submit" value="Submit">`                       |
+| `<input type="reset">`    | 定义重置所有表单字段到默认值的按钮         | `<input type="reset" value="Reset">`                         |
+| `<input type="radio">`    | 定义单选按钮                               | `<input type="radio" name="gender" value="male">Male`        |
+| `<input type="checkbox">` | 定义复选框                                 | `<input type="checkbox" name="interest" value="coding">Coding` |
+| `<input type="date">`     | 用于应包含日期的输入字段                   | `<input type="date" name="birthday">`                        |
+| `<input type="file">`     | 定义文件选择域和一个“浏览”按钮用于文件上传 | `<input type="file" name="myfile">`                          |
+
+More info at https://www.w3schools.com/html/html_form_input_types.asp
+
+
+
+### HTML Web Storage API
+
+HTML web storage provides two objects for storing data on the client: 
+
+• **window.localStorage** - stores data with no expiration date 
+
+• **window.sessionStorage** - stores data for one session (data is lost when the browser tab is closed)
+
+#### API methods
+
+```javascript
+<storage>.setItem(keyName, Value)
+let aValue = <storage>.getItem(keyName)
+<storage>.removeItem(keyName)
+```
 
 
 
@@ -777,6 +919,7 @@ word.length()
 ```javascript
 var name = 'aaaaa'
 word.length(name)  //5
+
 
 name.slice(x,y) //allow to slice/dice the strings to separate them into individual characters
 name.slice(0,1) // 'a'
